@@ -1,0 +1,81 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins&family=Roboto+Slab&display=swap'); 
+
+*{
+    box-sizing: border-box;
+} 
+body{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(to right, #D9AFD9 0%, #97D9E1 );
+     font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    background: transparent;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.head{
+    text-align: center;
+}
+.form{
+    padding: 20px 40px;
+}
+
+.data{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.data label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.data input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid grey;
+}
+
+.data small{
+    position: absolute;
+}
+ 
+.button{
+    width: 100%;
+    background: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid orangered;
+}
+.button:hover{
+    background: green;
+    border: 2px solid green;
+}
+
+.data.success input{
+    border: 2px solid #09c372;
+} 
+
+.data.error input{
+    border: 2px solid red;
+} 
+.data small{
+    position: absolute ;
+    margin: 4px;
+    visibility: hidden;
+    color: red;
+}
